@@ -91,50 +91,50 @@ homeContactLink.addEventListener('click', () => {
 
 
 // ---
-const themeColorSelector = document.querySelector('.themeClrSelector')
-const themeColorSelectorInput = document.querySelector(
-  '.themeClrSelector__input'
-)
-const root = document.documentElement;
+// const themeColorSelector = document.querySelector('.themeClrSelector')
+// const themeColorSelectorInput = document.querySelector(
+//   '.themeClrSelector__input'
+// )
+// const root = document.documentElement;
 
 
 
-const hexToRgb = (hex) => {
-  let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
-  return result
-    ? {
-        r: parseInt(result[1], 16),
-        g: parseInt(result[2], 16),
-        b: parseInt(result[3], 16),
-      }
-    : null
-}
+// const hexToRgb = (hex) => {
+//   let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
+//   return result
+//     ? {
+//         r: parseInt(result[1], 16),
+//         g: parseInt(result[2], 16),
+//         b: parseInt(result[3], 16),
+//       }
+//     : null
+// }
 
-const eventFire = (el, etype) => {
-  if (el.fireEvent) {
-    el.fireEvent('on' + etype)
-  } else {
-    let evObj = document.createEvent('Events')
-    evObj.initEvent(etype, true, false)
-    el.dispatchEvent(evObj)
-  }
-}
+// const eventFire = (el, etype) => {
+//   if (el.fireEvent) {
+//     el.fireEvent('on' + etype)
+//   } else {
+//     let evObj = document.createEvent('Events')
+//     evObj.initEvent(etype, true, false)
+//     el.dispatchEvent(evObj)
+//   }
+// }
 
-themeColorSelector.addEventListener('click', () => {
-  eventFire(themeColorSelectorInput, 'input')
-})
+// themeColorSelector.addEventListener('click', () => {
+//   eventFire(themeColorSelectorInput, 'input')
+// })
 
-const setDynamicColor = (color) => {
+// const setDynamicColor = (color) => {
 
-  const { r, g, b } = hexToRgb(`${color}`)
+//   const { r, g, b } = hexToRgb(`${color}`)
   
-  root.style.setProperty('--themeColor', `${r},${g},${b}`);
-  //localStorage.setItem('color', color)
-}
+//   root.style.setProperty('--themeColor', `${r},${g},${b}`);
+//   //localStorage.setItem('color', color)
+// }
 
-themeColorSelectorInput.addEventListener('input', (e) => {
-  setDynamicColor(e.target.value)
-})
+// themeColorSelectorInput.addEventListener('input', (e) => {
+//   setDynamicColor(e.target.value)
+// })
 
 // if (localStorage.getItem('color')) {
 //   let userSelectedColor = localStorage.getItem('color')
