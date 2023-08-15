@@ -399,7 +399,7 @@ a {
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
-  background-image: url('file:///Users/xaviquintanilla/Documents/Personal%20Projects/Portfolio/assets/home.png');
+  background-image: url('/assets/home.png');
   background-position: top;
   background-size:contain;
 }
