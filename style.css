@@ -399,7 +399,7 @@ a {
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
-  background-image: url('/assets/home.png');
+  background-image: url('assets/home.png');
   background-position: top;
   background-size:contain;
 }
