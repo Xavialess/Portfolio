@@ -8,6 +8,10 @@ const smMenuLink2 = document.querySelector('.main-header__sm-menu-link--2')
 const smMenuLink3 = document.querySelector('.main-header__sm-menu-link--3')
 const smMenuLink4 = document.querySelector('.main-header__sm-menu-link--4')
 
+const homeProjectLink = document.querySelector('.home-project')
+const homeContactLink = document.querySelector('.home-contact')
+
+
 smMenuBtn.addEventListener('click', () => {
   smMenu.style.transitionDelay = '0s'
   smMenu.classList.add('main-header__sm-menu--active')
@@ -77,7 +81,12 @@ smMenuCloseBtn.addEventListener('click', () => {
   smMenu.classList.remove('main-header__sm-menu--active')
 })
 
-
+homeProjectLink.addEventListener('click', () => {
+  document.getElementById("projects").scrollIntoView()
+})
+homeContactLink.addEventListener('click', () => {
+  document.getElementById("contact").scrollIntoView()
+})
 
 
 
