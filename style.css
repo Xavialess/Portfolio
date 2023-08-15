@@ -122,7 +122,7 @@ a {
   font-size: 4.5rem;
   letter-spacing: 1px;
   line-height: 1.3;
-  color: #000;
+  color: #e85f32;
   font-weight: 400;
 }
 
@@ -399,7 +399,11 @@ a {
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
+  background-image: url('file:///Users/xaviquintanilla/Documents/Personal%20Projects/Portfolio/assets/home.png');
+  background-position: top;
+  background-size:contain;
 }
+
 
 .home-hero__content {
   max-width: 120rem;
@@ -704,6 +708,10 @@ a {
   }
 }
 
+.project-achievements{
+  list-style: square;
+}
+
 /* Contact */
 
 .contact {
@@ -825,9 +833,10 @@ a {
   background: rgba(var(--themeColor), 1);
   color: #fff;
   margin-top: 4rem;
-  display: block;
+  display: grid;
   border-radius: 5px;
   cursor: pointer;
+  justify-content: center;
 }
 
 .contact__form-visual {
@@ -904,7 +913,7 @@ a {
 .main-footer__socials {
   display: flex;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 25rem;
   margin: auto;
   margin-top: 6rem;
@@ -912,6 +921,7 @@ a {
 
 .main-footer__social-link-icon {
   width: 2.5rem;
+  margin: 2rem;
 }
 
 .main-footer__bottom {
